@@ -1,4 +1,4 @@
-# Project Portfolio Website README
+# RafalDev
 
 This repository contains the source code for my personal project portfolio website. The website is designed to showcase my projects, skills, and experiences to potential employers, clients, or anyone interested in learning more about me and my work.
 
