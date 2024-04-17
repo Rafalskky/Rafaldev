@@ -1,0 +1,61 @@
+$footer-color: #acacac
+
+footer
+  background: black
+  background: linear-gradient(176deg, rgb(18, 24, 27) 50%, rgb(32, 39, 55) 100%)
+  color: #fff
+  padding: 20px 0
+  text-align: center
+
+.footer-content
+  display: flex
+  flex-direction: column
+  align-items: center
+
+.footer-icons
+  display: flex
+  align-items: center
+  gap: 10px
+
+  img
+    width: 32px
+    height: 32px
+
+  a
+    display: inline-flex
+    width: 32px
+    height: 32px
+    border-radius: 50%
+    transition: background-color 0.3s
+
+    &:hover
+      background-color: rgba(255, 255, 255, 0.1)
+
+ul.footer-links
+  list-style: none
+  margin: 20px 0 0 0
+  padding: 0
+  display: flex
+  align-items: center
+  gap: 5px
+
+  li
+    font-size: 16px
+    margin: 0 5px
+
+    a
+      color: $footer-color
+      display: inline-flex
+      border-radius: 50%
+      transition: background-color 0.3s
+      text-decoration: none
+
+      &:hover,
+      &:focus
+        text-decoration: none
+        color: $footer-color
+
+p
+  color: $footer-color
+  margin: 10px 0
+  font-size: 14px

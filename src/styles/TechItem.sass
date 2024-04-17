@@ -1,0 +1,151 @@
+.tech-info
+  z-index: 0
+  padding: 10px 2%
+  text-align: center
+  background: black
+  background: linear-gradient(176deg, rgb(18, 24, 27) 50%, rgb(32, 39, 55) 100%)
+
+  h1
+    color: white
+    margin-bottom: 20px
+
+  .tech-container
+    z-index: 0
+    margin-bottom: 100px
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    grid-gap: 40px
+  .tech-item-container 
+    min-height:150px
+    .tech-item
+      z-index: 1
+      width: 350px
+      min-height: 300px
+      padding: 20px
+      border: 2px solid #ddd
+      border-radius: 10px
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2)
+      transition: transform 0.3s ease, box-shadow 0.3s ease
+      margin: 0 auto
+      h3
+        margin-top: 50px
+        text-align: center
+        color: white
+        font-weight: 400
+        transition: margin-top 1s ease
+
+      p
+        margin: 20px
+        font-size: 18px
+        color: white
+        margin-bottom: 10px
+        text-align: left
+
+      .description
+        max-height: 40px
+        opacity: 0
+        transition: max-height 0.5s ease, opacity 0.5s ease
+
+      &:hover
+        .description
+          overflow: hidden
+          max-height: 200px
+          opacity: 1
+
+      img
+        transform: translate(0, 50%)
+        transition: transform 0.5s ease
+        width: 100px
+        height: 100px
+        margin: 0 auto
+
+    .tech-item:hover img
+        transform: translate(0, -1px)
+    .tech-item:hover h3
+        transform: translate(0, -1px)
+        margin-top: 1px
+
+
+
+
+  @media screen and (max-width: 1300px)
+    .tech-container
+      grid-template-columns: repeat(2, 1fr)
+      padding: 0
+      .tech-item
+        width: 300px
+
+
+  @media screen and (max-width: 850px)
+    .tech-info
+      height: 300px
+    .tech-container
+      grid-template-columns: repeat(2, 1fr)
+      padding: 0
+      grid-gap: 10px
+      gap: 20px
+
+    .tech-item-container 
+      min-height:150px
+
+      .tech-item
+        width: 330px
+        
+
+
+  @media screen and (max-width: 830px)
+    .tech-container 
+      height: 550px
+      display: flex 
+      flex-direction: row 
+      flex-wrap: nowrap 
+      overflow-x: auto 
+      overflow-y: hidden 
+      -webkit-overflow-scrolling: touch 
+      scrollbar-width: none 
+
+    .tech-container::-webkit-scrollbar 
+      display: none 
+
+    .tech-item-container 
+      width: auto
+      flex: 0 0 auto 
+      margin-top:50px
+      height: 600px
+
+      .tech-item
+        width: 300px
+      h3
+        margin-top: 30px
+
+      p
+        font-size: 16px
+
+
+  //DOTS
+
+.dot-indicators
+  transform: translate(0,-500%)
+  opacity: 0
+  display: flex
+  justify-content: center
+  align-items: center
+
+  .dot
+    height: 10px
+    width: 20px
+    margin: 8px
+    background-color: #fcfcfc
+    border-radius: 4px
+    display: inline-block
+    cursor: pointer
+    &.active
+      background-color: #f36573
+@media screen and (max-width: 830px)
+  .dot-indicators
+    opacity: 1
+
+
+
+
+

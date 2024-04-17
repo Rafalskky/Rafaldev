@@ -1,0 +1,122 @@
+@import App.sass
+
+#MyProject
+    background: linear-gradient(150deg, #432343 0%, #0d090d 70%,)    
+    font-family: $primary-font
+
+    .test-description
+        margin: 0
+        p
+            margin: 0
+            text-align: center
+            font-size: 14px
+
+    h1
+        font-size: $heading1-font-size
+        color: #efe9f7  // A light lavender for contrast
+        text-align: center
+        margin: 20px 0
+        padding: 20px 0
+        border-bottom: 1px solid #41294d // Darker violet
+        width: 100%
+       
+    .ProjectShowcase
+        display: flex
+        max-height: 1500px
+        width: 100%
+        flex-direction: column
+        align-items: center
+        background-color: inherit
+        overflow: hidden
+
+        .project-image
+            overflow: hidden 
+            position: relative
+            flex: 1
+            width: 80%
+            height: 500px
+            margin: 0 1% 0 1%
+            z-index: 0
+            img
+                width: 100%
+                height: 500px
+                object-fit: cover
+                border-radius: 20px
+                object-position: top
+                transition: object-position 15s
+                &:hover
+                    object-position: bottom 
+
+        .project-info
+            margin-top:-40px
+            margin-bottom: 100px
+            max-width: 500px
+            height: fit-content
+            display: flex
+            flex-direction: column
+            background-color: #0d090d
+            color: #ffffff  // Soft lavender for text
+            line-height: 1.5
+            border: 1px solid #41294d // Darker violet
+            padding: 20px
+            border-radius: 10px
+            z-index: 1
+            transition: transform 0.3s ease-in-out
+
+            &.hovered 
+                transform: translateY(50px)
+
+            h2, .project-title
+                font-size: $heading1-font-size
+                color: #eee6fa // Light lavender for titles
+                text-align: center
+
+            .project-description
+                font-size: $base-font-size
+                font-weight: 300
+                color: #f5f1fa // Soft lavender for text
+
+            .stack
+                width: 100%
+                max-height: fit-content
+                ul
+                    display: flex
+                    flex-direction: row 
+                    list-style: none
+                    padding: 0
+                    justify-content: center
+                    margin-bottom: 10px
+                    li
+                        margin-right: 10px
+                        font-size: $base-font-size
+                        font-weight: 300
+                        color: #eee6fa // Soft lavender for list items
+
+        .performance
+            width: 100%
+            margin-top: 20px
+            img
+                width: 100%
+                height: auto
+
+@media screen and (max-width: 800px)
+    h1
+        font-size: reduce($heading1-font-size, 20%)
+        margin: 10px 0
+    .ProjectShowcase 
+        .project-image
+            width: 90%
+        .project-info
+            height: 380px
+
+@media screen and (max-width: 500px)
+    #MyProject 
+        .ProjectShowcase 
+            .project-image 
+                width: 95%
+                img
+                    height: 400px
+            .project-info
+                width: 80%
+                .project-title
+                    font-size: 27px

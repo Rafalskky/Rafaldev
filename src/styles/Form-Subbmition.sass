@@ -1,0 +1,125 @@
+#form-submission-wrapper
+  display: flex
+  align-items: center
+  padding: 30px
+  background: #f9f9f9
+  border-radius: 12px
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1)
+
+#header
+  h1
+    background-image: linear-gradient(to right, #f36573, #eb7d1d)
+    -webkit-background-clip: text
+    background-clip: text
+    color: transparent
+    margin: 20px
+
+form
+  display: flex
+  flex-direction: column
+  max-width: 550px
+  min-width: 400px
+  width: 100%
+  padding: 30px
+  background: #ffffff
+  border-radius: 12px
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05)
+
+  div
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    width: 95%
+    margin-bottom: 18px
+
+  label
+    display: block
+    margin-bottom: 7px
+    color: #606060
+    font-size: 17px
+    font-weight: 300
+
+  input,
+  textarea
+    width: 100%
+    padding: 12px
+    border: 1px solid #d3d3d3
+    border-radius: 6px
+    font-size: 15px
+    color: #333333
+    background-color: #f7f7f7
+    transition: border 0.3s
+
+    &:focus
+      outline: none
+      border-color: #a0a0a0
+
+  textarea
+    resize: vertical
+    min-height: 130px
+
+  button
+    padding: 12px 20px
+    background-color: #4caf50
+    color: white
+    border: none
+    border-radius: 6px
+    cursor: pointer
+    font-size: 17px
+    font-weight: 500
+    transition: background-color 0.3s
+
+    &:hover
+      background-color: #388e3c
+
+@media screen and (max-width: 800px)
+  #form-submission-wrapper
+    padding: 20px
+    flex-direction: column
+    form
+      padding: 20px
+      div
+        label
+          font-size: 16px
+        input,
+        textarea
+          font-size: 14px
+        button
+          padding: 10px 18px
+
+@media screen and (max-width: 500px)
+  #form-submission-wrapper
+    padding: 20px
+    #header
+      margin: 0
+    form
+      display: flex
+      max-width: 300px
+      min-width: 400px
+      padding: 10px
+      div
+        width: 91.5%
+        textarea
+          font-size: 13px
+        button
+          padding: 8px 16px
+          font-size: 14px
+
+
+@media screen and (max-width: 430px)
+  #form-submission-wrapper
+    padding: 20px
+    #header
+      h1
+        font-size: 45px
+    form
+      max-width: 300px
+      min-width: 350px
+      padding: 10px
+      div
+        width: 91.5%
+
+@media screen and (max-width: 330px)
+  form
+    min-width: 250px
+  

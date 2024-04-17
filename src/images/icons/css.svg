@@ -1,0 +1,26 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 258 256" width="516" height="512">
+	<title>html-svg</title>
+	<style>
+		.s0 { fill: #e14e1d } 
+		.s1 { fill: #ffffff } 
+		.s2 { fill: #ebebeb } 
+		.s3 { fill: #0277bd } 
+	</style>
+	<g id="Layer">
+		<g id="Layer">
+			<path id="Layer" class="s0" d="m-298 60c0-33.1 26.9-60 60-60h136c33.1 0 60 26.9 60 60v136c0 33.1-26.9 60-60 60h-136c-33.1 0-60-26.9-60-60z"/>
+			<path id="Layer" class="s1" d="m-250 38l8.6 96.6h110.7l-3.7 41.4-35.6 9.7-35.6-9.7-2.4-26.6h-32.1l4.6 51.3 65.5 18.2 65.5-18.2 8.7-98h-116.4l-2.9-32.8h122.1 0.1l2.9-31.9z"/>
+			<path id="Layer" class="s2" d="m-170 38h-80l8.6 96.6h71.4v-31.9h-42.2l-2.9-32.8h45.1z"/>
+			<path id="Layer" class="s2" d="m-170 185.6v0.1l-35.6-9.7-2.4-26.6h-32.1l4.6 51.3 65.5 18.2z"/>
+		</g>
+	</g>
+	<g id="Layer">
+		<g id="Layer">
+			<path id="Layer" class="s3" d="m2 60c0-33.1 26.9-60 60-60h136c33.1 0 60 26.9 60 60v136c0 33.1-26.9 60-60 60h-136c-33.1 0-60-26.9-60-60z"/>
+			<path id="Layer" class="s2" d="m55.8 102.7l2.8 31.9h71.5v-31.9z"/>
+			<path id="Layer" class="s2" d="m130.1 38h-0.1-80l2.9 31.9h77.2z"/>
+			<path id="Layer" class="s2" d="m130.1 218.8v-33.2h-0.1l-35.6-9.6-2.3-25.4h-17.3-14.8l4.5 50.1 65.4 18.2z"/>
+			<path id="Layer" class="s1" d="m169.3 134.6l-3.7 41.4-35.6 9.6v33.3l65.5-18.2 0.4-5.4 7.6-84.1 0.7-8.5 5.8-64.7h-80v31.9h45l-2.9 32.8h-42.1v31.9z"/>
+		</g>
+	</g>
+</svg>
